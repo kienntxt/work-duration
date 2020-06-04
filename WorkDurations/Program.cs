@@ -34,6 +34,9 @@ namespace WorkDurations
             TimeSpan startTime, TimeSpan endTime, TimeSpan workingTime,
             List<DateTime> holidayList)
         {
+            if (t1.Date > t2.Date)
+                return new TimeSpan(0);
+
             //same date:
             if (t1.Date == t2.Date)
             {
