@@ -57,7 +57,6 @@ namespace WorkDurations
             }
 
             TimeSpan duration = new TimeSpan(0);
-            TimeSpan ts = t2.Subtract(t1);
             var days = t2.Date.Subtract(t1.Date).Days;
             for (int i = 0; i <= days; i++)
             {
